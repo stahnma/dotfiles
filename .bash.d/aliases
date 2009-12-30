@@ -1,5 +1,3 @@
-#$Id: .aliases 39 2007-06-16 06:17:21Z stahnma $
-
 alias apt-get='sudo apt-get'
 alias apt-cache='sudo apt-cache'
 alias df='df -h'
@@ -16,3 +14,8 @@ alias yumy='yum -y'
 alias Grep='grep'
 alias add-props='svn propset svn:keywords "Id HeadURL Date Author"'
 alias jwo="ssh stahnma@jameswhite.org"
+
+if [ `uname` = "Darwin" ] ; then
+   unalias ls
+   alias ls='ls -G'
+fi
