@@ -1,0 +1,14 @@
+
+To use, make a file called .bash.d/00_private.sh and put your variables in it you don't want in git. 
+
+Example:
+
+LDAP_PASSWORD=foobar
+FREENODE_PW=foobar
+WEB_PIN=00000
+GITHUB_TOKEN=00000000000000
+
+export  LDAP_PASSWORD FREENODE_PW WEB_PIN GITHUB_TOKEN
+
+
+Otherwise, make install should do it
