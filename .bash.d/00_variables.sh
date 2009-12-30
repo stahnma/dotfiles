@@ -7,7 +7,7 @@ HOSTNAME=`hostname`
 FQDN=""
 UNAME=`uname`
 
-if [ -f "$UNAME" = "Linux" ] ; then
+if [ "$UNAME" = "Linux" ] ; then
   FQDN=`hostname --fqdn`
   HOSTNAME=`hostname -s`
 fi
