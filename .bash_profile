@@ -4,10 +4,3 @@
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
-
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin
-sudo $HOME/bin/resolver.sh
-
-export PATHh
