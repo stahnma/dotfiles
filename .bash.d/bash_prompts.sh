@@ -11,8 +11,6 @@ color_prompt()
     PS1="${ePL}\u@\h ${eBL}"'$PWD'"> \[\e[0m\]"
 }
 
-
-
 # Prompt Goodness
 HOSTNAME=`hostname`
 BK="\[\O33[0;30m\]"        # black
@@ -36,3 +34,8 @@ eWT="\[\033[1;37m\]"       # white
 NRML="\[\033[0;0m\]"       # normal term color
 
 color_prompt
+
+if [ "$HOSTNAME" == "olive" ] ; then
+     PS1="${eBL}\u@\h ${eRD}"'$PWD'"> \[\e[0m\]"        
+fi
+export PS1
