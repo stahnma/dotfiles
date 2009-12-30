@@ -35,7 +35,7 @@ NRML="\[\033[0;0m\]"       # normal term color
 
 color_prompt
 
-if [ "$HOSTNAME" == "olive" ] ; then
+if [ "$SHORTNAME" == "olive" ] ; then
      PS1="${eBL}\u@\h ${eRD}"'$PWD'"> \[\e[0m\]"        
 fi
 export PS1
