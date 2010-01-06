@@ -1,3 +1,3 @@
 # Resolver stuff
 
-[ -f /usr/local/sbin/resolver.sh ] && /usr/local/sbin/resolver.sh
+[ -f /usr/local/sbin/resolver.sh ] && sudo /usr/local/sbin/resolver.sh

@@ -17,6 +17,6 @@ alias jwo="ssh stahnma@jameswhite.org"
 alias nocomments='sed -e '\''s/#.*//'\''|grep .'
 
 if [ `uname` = "Darwin" ] ; then
-   unalias ls
    alias ls='ls -G'
+   alias ldd='otool -L' 
 fi
