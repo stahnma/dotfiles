@@ -4,5 +4,7 @@
 
 if [ `uname` == "Darwin" ] ; then
    networksetup -setsearchdomains AirPort stahnkage.com websages.com
-   networksetup -setdnsservers "AirPort" 192.168.1.109
+   networksetup -setdnsservers AirPort 192.168.1.109
+   networksetup -setsearchdomains Ethernet stahnkage.com websages.com
+   networksetup -setdnsservers Ethernet 192.168.1.109
 fi
