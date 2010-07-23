@@ -13,5 +13,6 @@ if [ "$UNAME" = "Linux" ] ; then
 fi
 
 
+export NPX_PLUGIN_PATH=/usr/lib/jvm/java-1.6.0-sun-1.6.0.20/jre/plugin/i386/ns7
 
 export WORKSTATION EDITOR PATH HISTFILESIZE HISTSIZE UNAME FQDN SHORTNAME

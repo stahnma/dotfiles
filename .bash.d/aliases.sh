@@ -16,6 +16,7 @@ alias add-props='svn propset svn:keywords "Id HeadURL Date Author"'
 alias jwo="ssh stahnma@odin.websages.com"
 alias nocomments='sed -e '\''s/#.*//'\''|grep .'
 alias sl='ls'
+alias shotgun='shotgun -o 0.0.0.0'
 
 if [ `uname` = "Darwin" ] ; then
    alias ls='ls -G'
