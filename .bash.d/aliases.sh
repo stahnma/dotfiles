@@ -22,4 +22,5 @@ alias proxy='ssh -L 3128:localhost:3128  odin.websages.com'
 if [ `uname` = "Darwin" ] ; then
    alias ls='ls -G'
    alias ldd='otool -L' 
+   alias md5sum='md5'
 fi
