@@ -18,6 +18,7 @@ alias nocomments='sed -e '\''s/#.*//'\''|grep .'
 alias sl='ls'
 alias shotgun='shotgun -o 0.0.0.0'
 alias proxy='ssh -L 3128:localhost:3128  odin.websages.com'
+alias rsync='rsync --progress'
 
 if [ `uname` = "Darwin" ] ; then
    alias ls='ls -G'
