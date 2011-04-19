@@ -5,4 +5,4 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+[[ -s "/usr/local/bin/rvm" ]] && . "/usr/local/bin/rvm" # This loads RVM into a shell session.
