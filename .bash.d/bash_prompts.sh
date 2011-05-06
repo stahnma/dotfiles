@@ -1,5 +1,8 @@
 # .bash_prompts
 
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \[\1\]/'
+}
 
 normal_prompt()
 {
@@ -8,7 +11,7 @@ normal_prompt()
 
 color_prompt()
 {
-    PS1="${ePL}\u@\h ${eBL}"'$PWD'"> \[\e[0m\]"
+    PS1="${ePL}\u@\h ${eBL} "'$PWD'"${GY}"'$(parse_git_branch)'"${eBL}> \[\e[0m\]"
 }
 
 # Prompt Goodness
@@ -35,7 +38,4 @@ NRML="\[\033[0;0m\]"       # normal term color
 
 color_prompt
 
-if [ "$SHORTNAME" == "olive" ] ; then
-     PS1="${eBL}\u@\h ${eRD}"'$PWD'"> \[\e[0m\]"        
-fi
 export PS1
