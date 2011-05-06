@@ -1,7 +1,7 @@
 # Figure out Path
 # Basically, I like having a lot in my path, so I check the system path and
 #  then apply what I like on top of it.
-args"=/usr/local/bin:/usr/local/sbin:$HOME/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/X11R6/bin:$HOME/.gem/ruby/1.8/bin"
+args="/usr/local/bin:/usr/local/sbin:$HOME/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/X11R6/bin:$HOME/.gem/ruby/1.8/bin"
 aix_args="/opt/freeware/bin:/etc"
 solaris_args="/usr/xpg4/bin"
 hp_args=""
