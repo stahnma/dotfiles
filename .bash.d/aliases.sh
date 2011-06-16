@@ -1,6 +1,8 @@
 alias apt-get='sudo apt-get'
 alias apt-cache='sudo apt-cache'
+alias apt-file='sudo apt-file'
 alias df='df -h'
+alias ls='ls --color'
 alias ll='ls -alh'
 alias gerp='grep'
 alias bi='vim'
@@ -12,7 +14,6 @@ alias c='clear'
 #alias irc="irssi -c tyr.websages.com -p 4096 -w $FREENODE_PW"
 alias yumy='yum -y'
 alias Grep='grep'
-#alias add-props='svn propset svn:keywords "Id HeadURL Date Author"'
 alias jwo="ssh stahnma@odin.websages.com"
 alias nocomments='sed -e '\''s/#.*//'\''|grep .'
 alias sl='ls'
