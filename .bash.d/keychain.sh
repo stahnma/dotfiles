@@ -15,6 +15,4 @@ if [ -f "$HOME/.ssh/id_rsa" ] ; then
 fi
 
 #GPG Agent 
-if [ -x /usr/bin/gpg-agent ]; then
-        /usr/bin/gpg-agent --daemon
-fi
+eval $(gpg-agent --daemon)
