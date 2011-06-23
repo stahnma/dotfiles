@@ -39,3 +39,7 @@ NRML="\[\033[0;0m\]"       # normal term color
 color_prompt
 
 export PS1
+
+
+# The tab header in iTerm
+export PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*} \007"'
