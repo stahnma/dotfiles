@@ -1,0 +1,21 @@
+[user]
+	name = Michael Stahnke
+	email = stahnma@puppetlabs.com
+	signingkey = 4BD6EC30
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[github]
+	user = stahnma
+	token = 
+[alias]
+	ci = commit
+	co = checkout
+	br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate
+    lg = "log --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cr%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph"
+    review = log -p --reverse -M -C -C --patience --no-prefix
+[push]
+    default = current
