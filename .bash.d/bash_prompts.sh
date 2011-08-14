@@ -11,7 +11,7 @@ normal_prompt()
 
 color_prompt()
 {
-    PS1="${ePL}\u@\h ${eBL} "'$PWD'"${GY}"'$(parse_git_branch)'"${eBL}> \[\e[0m\]"
+    PS1="${ePL}\u@\h ${eBL} "'$PWD'"${GY}"'$(parse_git_branch)'"${eBL}> ${NRML}"
 }
 
 # Prompt Goodness
