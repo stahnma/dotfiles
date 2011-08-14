@@ -14,6 +14,18 @@ color_prompt()
     PS1="[\$?] ${ePL}\u@\h ${eBL}"'\w'"${GY}"'$(parse_git_branch)'"${eBL}> ${NRML}"
 }
 
+# Special prompt for Ubuntu/Debian
+deb_prompt()
+{
+    PS1="[\$?] ${BR}\u@\h ${eBL}"'\w'"${GY}"'$(parse_git_branch)'"${BR}> ${NRML}"
+}
+
+mac_prompt()
+{
+    PS1="[\$?] ${eWT}\u@\h ${eBL}"'\w'"${GY}"'$(parse_git_branch)'"${PL}> ${NRML}"
+}
+
+
 # Prompt Goodness
 HOSTNAME=`hostname`
 BK="\[\O33[0;30m\]"        # black
@@ -36,7 +48,13 @@ eWT="\[\033[1;37m\]"       # white
 # reset to teminal default
 NRML="\[\033[0;0m\]"       # normal term color
 
-color_prompt
+if [ -f "/etc/debian_version" ] ; then
+  deb_prompt
+elif [ `uname` = "Darwin" ] ; then
+  mac_prompt
+else
+  color_prompt
+fi
 
 export PS1
 
