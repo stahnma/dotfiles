@@ -96,5 +96,19 @@ set modeline
 " " which is not very legible on a black background
 " highlight comment ctermfg=cyan
 "
-autocmd FileType *.rb set tabstop=2|set shiftwidth=2|set noexpandtab
-autocmd FileType ruby set tabstop=2|set shiftwidth=2|set noexpandtab
+autocmd FileType *.rb set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType ruby set tabstop=2|set shiftwidth=2|set expandtab
+
+highlight LiteralTabs ctermbg=darkgreen guibg=darkgreen
+match LiteralTabs /\s\  /
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\s\+$/
+
+" Set up puppet manifest and spec options
+au BufRead,BufNewFile *.pp
+  \ set filetype=puppet
+au BufRead,BufNewFile *_spec.rb
+  \ nmap <F8> :!rspec --color %<CR>
+
+" Enable indentation matching for =>'s
+filetype plugin indent on
