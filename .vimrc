@@ -87,3 +87,14 @@ map ;j :%!perl -MJSON -e 'local $/; my $j =JSON->new(); print $j->pretty()->enco
 "----- set up my nifty stuff to view tabs and trailing spaces
 set list
 set listchars=tab:»·,trail:·
+
+
+set fo=tcq
+set modeline
+
+" set default comment color to cyan instead of darkblue
+" " which is not very legible on a black background
+" highlight comment ctermfg=cyan
+"
+autocmd FileType *.rb set tabstop=2|set shiftwidth=2|set noexpandtab
+autocmd FileType ruby set tabstop=2|set shiftwidth=2|set noexpandtab
