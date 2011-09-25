@@ -12,7 +12,7 @@ PATH="$args"
 [ "$uname" = "Linux" ] && PATH=$linux_args:$PATH
 [ "$uname" = "SunOS" ] && PATH=$solaris_args:$PATH
 [ "$uname" = "AIX" ] && PATH=$aix_args:$PATH
-[ "$uname" = "Darwin" ] && PATH=$mac_args:$PATH
+[ "$uname" = "Darwin" ] && PATH=$mac_args:$PATH:/opt/local/bin
 [ "$uname" = "HPUX" ] && PATH=$hp_args:$PATH
 
 export PATH
