@@ -56,6 +56,10 @@ else
   color_prompt
 fi
 
+if [ `uname` == "Darwin" ] ; then
+   export LSCOLORS=dxfxcxdxbxegedabagacad 
+fi
+
 export PS1
 
 
