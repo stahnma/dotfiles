@@ -7,7 +7,7 @@ aix_args="/opt/freeware/bin:/etc"
 solaris_args="/usr/xpg4/bin"
 hp_args=""
 linux_args="/usr/kerberos/bin"
-mac_args="/opt/local/bin"
+mac_args="/Developer/usr/bin:/opt/local/bin"
 
 PATH="$args"
 [ "$uname" = "Linux" ] && PATH=$linux_args:$PATH
