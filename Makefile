@@ -5,4 +5,5 @@ install:
 	install -p .bashrc  $(HOME)
 	install -p .vimrc $(HOME)
 	rsync -ax .bash.d $(HOME)
+	rsync -ax .vim $(HOME)
 	install -p .gitconfig $(HOME)
