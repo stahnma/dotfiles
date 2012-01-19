@@ -17,5 +17,6 @@
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate
     lg = "log --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cr%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph"
     review = log -p --reverse -M -C -C --patience --no-prefix
+  	who = shortlog --no-merges --format='%h %s' 
 [push]
     default = current
