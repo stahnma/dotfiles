@@ -16,4 +16,6 @@ PATH="$args"
 [ "$uname" = "Darwin" ] && PATH=$mac_args:$PATH
 [ "$uname" = "HPUX" ] && PATH=$hp_args:$PATH
 
-export PATH
+MANPATH=$MANPATH:/usr/share/man:/usr/local/share/man
+
+export PATH MANPATH

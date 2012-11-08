@@ -27,7 +27,3 @@ if [ `uname` = "Darwin" ] ; then
    alias ldd='otool -L' 
    alias md5sum='md5'
 fi
-
-alias patchEnterptise='git format-patch -C -M -s -n --subject-prefix='PATCH/PuppetEnterprise' origin/master..HEAD'
-alias patchAcceptance='git format-patch -C -M -s -n --subject-prefix='PATCH/PuppetAcceptance' origin/master..HEAD'
-alias patchPuppet='git format-patch -C -M -s -n --subject-prefix='PATCH/Puppet' origin/master..HEAD'

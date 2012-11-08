@@ -57,7 +57,7 @@ else
 fi
 
 if [ `uname` == "Darwin" ] ; then
-   export LSCOLORS=dxfxcxdxbxegedabagacad 
+   export LSCOLORS=dxfxcxdxbxegedabagacad
 fi
 
 export PS1
