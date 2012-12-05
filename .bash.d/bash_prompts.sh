@@ -11,7 +11,7 @@ normal_prompt()
 
 aix_prompt() 
 {
-    PS1="[\$?] [AIX] ${eGY}\u@\h ${eBL}"'\w'"${GY}""${eBL}:${NRML}"
+    PS1="[\$?] [AIX] ${eGY}\u@\h:${eBL}"'\w'"${GY}""${eBL} $ ${NRML}"
 }
 
 color_prompt()
