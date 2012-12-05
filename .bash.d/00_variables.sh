@@ -1,15 +1,19 @@
 WORKSTATIONS="mbplin olive duo mapplepro"
-EDITOR=vim
 HISTFILESIZE=100000000
 HISTSIZE=1000000
 SHORTNAME=`hostname`
 FQDN=""
 UNAME=`uname`
 HISTIGNORE=clear:c
+EDITOR=vim
 
-if [ "$UNAME" = "Linux" ] ; then
+if [ `uname` = "Linux" ] ; then
   FQDN=`hostname --fqdn`
   SHORTNAME=`hostname -s`
+fi
+
+if [ `uname` = "AIX" ] ; then
+  EDITOR=vi
 fi
 
 

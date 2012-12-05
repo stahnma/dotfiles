@@ -9,6 +9,11 @@ normal_prompt()
    PS1="\u@\h \w > "
 }
 
+aix_prompt() 
+{
+    PS1="[\$?] [AIX] ${eGY}\u@\h ${eBL}"'\w'"${GY}""${eBL}:${NRML}"
+}
+
 color_prompt()
 {
     PS1="[\$?] ${ePL}\u@\h ${eBL}"'\w'"${GY}"'$(parse_git_branch)'"${eBL}> ${NRML}"
@@ -52,6 +57,8 @@ if [ -f "/etc/debian_version" ] ; then
   deb_prompt
 elif [ `uname` = "Darwin" ] ; then
   mac_prompt
+elif [ `uname` = "AIX" ] ; then
+  aix_prompt
 else
   color_prompt
 fi
