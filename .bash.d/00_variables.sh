@@ -1,6 +1,7 @@
 WORKSTATIONS="mbplin olive duo mapplepro"
 HISTFILESIZE=100000000
 HISTSIZE=1000000
+HISTTIMEFORMAT="%F %T "
 SHORTNAME=`hostname`
 FQDN=""
 UNAME=`uname`
