@@ -8,3 +8,4 @@ for i in $HOME/.bash.d/* ; do
         . $i
     fi
 done
+[ -f /opt/boxen/env.sh ] && . /opt/boxen/env.sh
