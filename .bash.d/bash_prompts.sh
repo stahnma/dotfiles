@@ -9,7 +9,7 @@ normal_prompt()
    PS1="\u@\h \w > "
 }
 
-aix_prompt() 
+aix_prompt()
 {
     PS1="[\$?] [AIX] ${eGY}\u@\h:${eBL}"'\w'"${GY}""${eBL} $ ${NRML}"
 }
@@ -27,7 +27,8 @@ deb_prompt()
 
 mac_prompt()
 {
-    PS1="[\$?] ${eWT}\u@\h ${eBL}"'\w'"${GY}"'$(parse_git_branch)'"${PL}> ${NRML}"
+    # Now includes DAG: https://github.com/tkishel/dag_prompt
+    PS1="[\$?] ${eWT}\u@\h ${eBL}"'\w'"${GY}"'$(parse_git_branch)'"${PL} ${NRML}\342\204\226 "
 }
 
 
